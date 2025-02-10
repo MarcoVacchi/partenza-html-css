@@ -34,8 +34,7 @@ h2 {
 }
 
 h3 {
-    margin-bottom: 15px;
-    margin-left: 30px;
+    padding: 10px;
 }
 
 .col-item {
@@ -66,17 +65,6 @@ body {
     display: none;
 }
 
-.preparazione {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-}
-
-.prep-margin {
-    margin-bottom: 20px;
-
-}
-
 .icon {
         display: flex;
         align-items: center;
@@ -85,6 +73,13 @@ body {
         margin-bottom: 20px;
 }
 
+.preparazione {
+    padding: 0px;
+}
+
+.item-preparazione {
+    padding: 10px;
+}
 
 .icons {
     width: 35px;
@@ -101,6 +96,10 @@ body {
     height: 20px;
 }
 
+#banner {
+    display: none;
+}
+
 .important {
     font-size: 20px;
 }
@@ -113,13 +112,35 @@ body {
 }
 
 .mid-main img {
-    width: 65%;
-    margin-left: 50px;
+    width: 80%;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-mid-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #7c69a4;
+}
+
+.container-footer {
+    color: white;
+    font-size: 13px;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
 
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
     h1 {
         width: 100%;
@@ -127,7 +148,7 @@ body {
     }
 
     .preparazione {
-        flex-direction: row;
+        display: flex;
         flex-wrap: wrap;
         gap: 10px;
     }
@@ -141,16 +162,78 @@ body {
     }
 
     #img-dolce {
-        width: 97%;
+        width: 100%;
     }
 
+    .d-none {
+        display: inline;
+    }
 
+    #banner {
+        width: 100%;
+        display: inline;
+        margin-bottom: 20px;
+    }
+
+    .icons {
+        width: 100%;
+        height: 35px;
+        border-radius: 5%;
+    }
+
+    .mid-main img {
+        width: 50%;
+        float: left;
+        margin-right: 15px;
+        margin-top: 2px;
+    }
+
+    .container-mid-main {
+        display: inline-block;
+    }
+
+    .line {
+        margin-bottom: 15px;
+    }
+
+    .section-main {
+        margin-bottom: 50px;
+    }
 }
 
 
 @media screen and (min-width: 992px) {
 
+    .container {
+        margin-left: 140px;
+    }
 
+    #img-dolce {
+        width: 60%;
+    }
 
+    .top-main {
+        background-color: white;
+        display: flex; 
+    }
+    
+    .preparazione {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
 
+    .mid-main {
+        margin-bottom: 70px;
+    }
+
+    .mid-main img {
+        width: 15%;
+        float: left;
+    }
+
+    .container-mid-main {
+        display: inline-block;
+        font-size: larger;
+    }
 }
