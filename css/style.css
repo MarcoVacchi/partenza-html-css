@@ -4,8 +4,23 @@
     box-sizing: border-box;
 }
 
-#logo {
+.container {
+    max-width: 585px;
+}
 
+
+h1 {
+    font-family: 'Nerko One', cursive;
+    color: #ff9614;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+
+body {
+    font-family:  Montserrat, 'Helvetica Neue', sans-serif;
+    background-color: #f6f5f3;
 }
 
 
@@ -16,4 +31,31 @@
 .preparazione {
     display: flex;
     flex-direction: column;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    h1 {
+        width: 100%;
+        text-align: left;
+
+    }
+
+    
+
+
+
+}
+
+
+@media screen and (min-width: 992px) {
+    
+
+
+
+
 }
